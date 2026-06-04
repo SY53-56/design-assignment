@@ -52,7 +52,7 @@ export default function ReviewSection() {
     <img
       src={vector}
       alt=""
-      className="absolute top-10 md:top-24 right-5 md:right-20 w-32 md:w-64 opacity-50 -z-10"
+      className="absolute top-10 md:top-20 md:right-20 lg:right-5 lg:right-20 w-32 md:w-64 opacity-50 -z-10"
     />
 
     <h1 className="heading text-3xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight">

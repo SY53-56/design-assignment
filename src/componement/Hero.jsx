@@ -32,27 +32,27 @@ export default function Hero() {
   {
     src: Ellipse268,
     className:
-      "absolute left-52 -top-4 w-20 md:w-28 lg:w-32",
+      "absolute left-96 -top-4 w-20 md:w-28 lg:w-32",
   },
   {
     src: Ellipse263,
     className:
-      "absolute left-[420px] top-10 w-16 md:w-24 lg:w-28",
+      "absolute left-[520px] top-10 w-16 md:w-24 lg:w-28",
   },
   {
     src: Ellipse262,
     className:
-      "absolute left-[560px] top-0 w-20 md:w-28 lg:w-32",
+      "absolute left-[760px] top-0 w-20 md:w-28 lg:w-32",
   },
   {
     src: Ellipse261,
     className:
-      "absolute left-[700px] top-20 w-16 md:w-24 lg:w-28",
+      "absolute right-80 top-20 w-16 md:w-24 lg:w-28",
   },
   {
     src: Ellipse259,
     className:
-      "absolute left-[840px] top-12 w-16 md:w-24 lg:w-28",
+      "absolute right-24 top-12 w-16 md:w-24 lg:w-28",
   },
   {
     src: Ellipse260,
@@ -102,7 +102,8 @@ export default function Hero() {
               -translate-x-1/2
               top-10
               sm:top-14
-              md:top-20
+              md:top-17
+              lg:top-20
               w-40
               sm:w-56
               md:w-72

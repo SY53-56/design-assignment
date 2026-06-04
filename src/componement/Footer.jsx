@@ -12,7 +12,7 @@ export default function Footer() {
         <p className='text-lg md:text-2xl text-center max-w-2xl'>To make your stay special and even more memorable</p>
         <Button className="rounded-4xl mt-5 px-8 py-3 bg-black text-white" name="Subscribe Now" />
       </div>
-      <img className='hidden md:block absolute top-40 right-16 w-32' src={rectangle3} alt="" />
+      <img className='hidden md:block absolute top-40 md:right-3 right-16 w-32' src={rectangle3} alt="" />
       <div className='mt-20 flex flex-col gap-10 lg:flex-row justify-between border-t-2 py-10'>
         <div className='flex flex-col gap-2 w-full sm:w-1/2 lg:w-auto'>
           <h1 className='text-2xl font-bold mb-4'>Company</h1>
