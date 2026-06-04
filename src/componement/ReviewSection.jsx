@@ -18,82 +18,86 @@ import Ellipse268 from "../assets/Ellipse 268.png";
 export default function ReviewSection() {
 
   const avatarsleft = [
-    { src: Ellipse268 ,className: "w-24  md:w-28 translate-x-10"},
-    { src: Ellipse263, className: "w-16 md:w-20  -translate-x-10" },
-    { src: Ellipse262 , className: "w-16 md:w-28 translate-x-10" },
-    { src: Ellipse261, className: "w-24 md:w-20 -translate-x-10" },
+    { src: Ellipse268 ,className: "w-24  md:w-28 -translate-y-10 lg:translate-x-10"},
+    { src: Ellipse263, className: "w-16 md:w-20 translate-y-10  lg:-translate-x-10" },
+    { src: Ellipse262 , className: "w-16 md:w-28 -translate-y-10 lg:translate-x-10" },
+    { src: Ellipse261, className: "w-24 md:w-20 translate-y-10 lg:-translate-x-10" },
   ];
 
   const avatarsRight = [
-    { src: Ellipse260,className: "w-24 md:w-28  translate-x-10" },
-    { src: Ellipse259, className: "w-24 md:w-20  -translate-x-10" },
-    { src: Ellipse257,className: "w-24 md:w-28  translate-x-10" },
-    { src: Ellipse258,className: "w-24 md:w-20  -translate-x-10" },
+    { src: Ellipse260,className: "w-24 md:w-28   translate-y-10 lg:translate-x-10" },
+    { src: Ellipse259, className: "w-24 md:w-20   -translate-y-10 lg:-translate-x-10" },
+    { src: Ellipse257,className: "w-24 md:w-28   translate-y-10 lg:translate-x-10" },
+    { src: Ellipse258,className: "w-24 md:w-20   -translate-y-10 lg:-translate-x-10" },
   ];
 
   return (
-    <section className="px-6 md:px-10 mb-16 lg:px-28 mt-20 flex flex-col gap-10 lg:flex-row ">
+   <section className="px-4 md:px-8 py-16 flex flex-col lg:flex-row items-center justify-center gap-10 overflow-hidden">
+  
+  {/* LEFT AVATARS */}
+  <div className="flex flex-row lg:flex-col gap-4 lg:gap-6 order-2 lg:order-1">
+    {avatarsleft.map((img, i) => (
+      <img
+        key={i}
+        src={img.src}
+        alt=""
+        className={img.className}
+      />
+    ))}
+  </div>
 
-      {/* LEFT AVATARS */}
-      <div className="flex flex-col mt-40 gap-5">
-        {avatarsleft.map((img, i) => (
-          <img
-            key={i}
-            src={img.src}
-            className={img.className}
-            alt=""
-          />
-        ))}
+  {/* CENTER CONTENT */}
+  <div className="relative flex-1 max-w-4xl text-center order-1 lg:order-2">
+
+    <img
+      src={vector}
+      alt=""
+      className="absolute top-10 md:top-24 right-5 md:right-20 w-32 md:w-64 opacity-50 -z-10"
+    />
+
+    <h1 className="heading text-3xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight">
+      <Highlight image={rectangle2}>
+        What
+      </Highlight>{" "}
+      our customer
+      <br />
+      says About Us
+    </h1>
+
+    {/* TESTIMONIAL */}
+    <div className="relative mt-10 max-w-2xl mx-auto bg-[#D7EEDD4D] rounded-3xl px-6 md:px-10 py-8">
+
+      <div className="absolute top-5 left-5 flex">
+        <img src={Inverted1} alt="" className="w-5 md:w-7" />
+        <img src={Inverted1} alt="" className="w-5 md:w-7" />
       </div>
 
-      {/* CENTER CONTENT */}
-      <div className="relative max-w-4xl text-center mx-auto lg:mx-0">
+      <p className="text-sm md:text-lg leading-7 text-center px-4 md:px-8">
+        Elementum delivered the site within the timeline as requested.
+        In the end, the client found a 50% increase in traffic within
+        days since its launch. They also had an impressive ability to
+        use technologies that the company hadn’t used before.
+      </p>
 
-        <h1 className="heading text-4xl md:text-6xl lg:text-7xl">
-          <Highlight image={rectangle2} children="What" /> our customer <br />
-          says About Us
-        </h1>
-
-        <img
-          className="absolute top-20 md:top-36 right-0 md:right-24 w-40 md:w-80 opacity-60"
-          src={vector}
-          alt=""
-        />
-
-        {/* TESTIMONIAL BOX */}
-        <div className="px-6 sm:px-10 w-full max-w-xl relative py-6 md:py-8 mt-10 bg-[#D7EEDD4D] rounded-3xl text-left mx-auto">
-
-          <div className="flex absolute top-10 left-3 gap-1">
-            <img className="w-6 md:w-8" src={Inverted1} alt="" />
-            <img className="w-6 md:w-8" src={Inverted1} alt="" />
-          </div>
-
-          <p className="text-base md:text-[21px] leading-7 text-center ml-10 mt-5">
-            Elementum delivered the site within the timeline as requested. In the end, the client found a 50%
-            increase in traffic within days since its launch. They also had an impressive ability to use technologies
-            that the company hasn’t used, which have also proved to be easy to use and reliable.
-          </p>
-          <div className="flex absolute bottom-6 right-6 gap-1">
-            <img className="w-6 md:w-8" src={Inverted2} alt="" />
-            <img className="w-6 md:w-8" src={Inverted2} alt="" />
-          </div>
-
-        </div>
-
+      <div className="absolute bottom-5 right-5 flex">
+        <img src={Inverted2} alt="" className="w-5 md:w-7" />
+        <img src={Inverted2} alt="" className="w-5 md:w-7" />
       </div>
+    </div>
+  </div>
 
-      {/* RIGHT AVATARS */}
-      <div className="flex flex-col mt-28 gap-6 t">
-        {avatarsRight.map((img, i) => (
-          <img
-            key={i}
-            src={img.src}
-            className={img.className}
-            alt=""
-          />
-        ))}
-      </div>
+  {/* RIGHT AVATARS */}
+  <div className="flex flex-row lg:flex-col gap-4 lg:gap-6 order-3">
+    {avatarsRight.map((img, i) => (
+      <img
+        key={i}
+        src={img.src}
+        alt=""
+        className={img.className}
+      />
+    ))}
+  </div>
 
-    </section>
+</section>
   )
 }
