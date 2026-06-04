@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-    <section>
+    <section className="overflow-x-hidden">
 <Navbar/>
 <Hero/>
 <AboutSection/>

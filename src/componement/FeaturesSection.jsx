@@ -7,19 +7,43 @@ import rectangle661 from "../assets/Rectangle 661.png"
 export default function FeaturesSection() {
   return (
     <section className='mt-30 relative px-6 lg:px-28'>
-        <h1 className='heading text-7xl'>What we <Highlight image={rectangle2} children="can "/><br/>
-offer you!</h1>
-<img className='absolute -top-48 -right-20 w-[800px]' src={vector2517} alt="" />
+      <h1 className='heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl max-w-4xl'>
+        What we <Highlight image={rectangle2} children="can "/>
+        <br />
+        offer you!
+      </h1>
+      <img className='hidden lg:block absolute -top-48 -right-20 w-[800px]' src={vector2517} alt="" />
 
-<div className='flex flex-col relative gap-10 mt-10'>
-<OfferSection para={<p>Office of multiple <br/>
-interest content</p>} heading="Colaborative & partnership"/>
-<OfferSection para={<p>Office of multiple <br/>
-interest content</p>} heading="Colaborative & partnership"/>
-<OfferSection para={<p>Office of multiple <br/>
-interest content</p>} heading="Colaborative & partnership"/>
-<img className='absolute top-76 right-80 -z-40 w-28' src={rectangle661} alt="" />
-</div>
+      <div className='flex flex-col relative gap-10 mt-10'>
+        <OfferSection
+          para={
+            <p>
+              Office of multiple <br />
+              interest content
+            </p>
+          }
+          heading="Colaborative & partnership"
+        />
+        <OfferSection
+          para={
+            <p>
+              Office of multiple <br />
+              interest content
+            </p>
+          }
+          heading="Colaborative & partnership"
+        />
+        <OfferSection
+          para={
+            <p>
+              Office of multiple <br />
+              interest content
+            </p>
+          }
+          heading="Colaborative & partnership"
+        />
+        <img className='hidden md:block absolute top-80 right-80 -z-40 w-20' src={rectangle661} alt="" />
+      </div>
     </section>
   )
 }

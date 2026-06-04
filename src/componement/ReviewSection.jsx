@@ -18,25 +18,24 @@ import Ellipse268 from "../assets/Ellipse 268.png";
 export default function ReviewSection() {
 
   const avatarsleft = [
-    { src: Ellipse268 ,className: "w-24 md:w-28"},
-    { src: Ellipse263, className: "w-24 md:w-28" },
-    { src: Ellipse262 , className: "w-24 md:w-28" },
-    { src: Ellipse261, className: "w-24 md:w-28" },
+    { src: Ellipse268 ,className: "w-24  md:w-28 translate-x-10"},
+    { src: Ellipse263, className: "w-16 md:w-20  -translate-x-10" },
+    { src: Ellipse262 , className: "w-16 md:w-28 translate-x-10" },
+    { src: Ellipse261, className: "w-24 md:w-20 -translate-x-10" },
   ];
 
   const avatarsRight = [
-    { src: Ellipse260,className: "w-24 md:w-28" },
-    { src: Ellipse259, className: "w-24 md:w-28" },
-    { src: Ellipse257,className: "w-24 md:w-28" },
-    { src: Ellipse258,className: "w-24 md:w-28" },
+    { src: Ellipse260,className: "w-24 md:w-28  translate-x-10" },
+    { src: Ellipse259, className: "w-24 md:w-20  -translate-x-10" },
+    { src: Ellipse257,className: "w-24 md:w-28  translate-x-10" },
+    { src: Ellipse258,className: "w-24 md:w-20  -translate-x-10" },
   ];
 
   return (
-    <section className="px-6 lg:px-28 md:px-10 mt-20 flex flex-col lg:flex-row justify-between">
+    <section className="px-6 md:px-10 mb-16 lg:px-28 mt-20 flex flex-col gap-10 lg:flex-row ">
 
       {/* LEFT AVATARS */}
-      <div className="flex flex-col gap-6 items-center mt-30 lg:items-end">
-
+      <div className="flex flex-col mt-40 gap-5">
         {avatarsleft.map((img, i) => (
           <img
             key={i}
@@ -45,11 +44,10 @@ export default function ReviewSection() {
             alt=""
           />
         ))}
-
       </div>
 
       {/* CENTER CONTENT */}
-      <div className="relative max-w-4xl text-center">
+      <div className="relative max-w-4xl text-center mx-auto lg:mx-0">
 
         <h1 className="heading text-4xl md:text-6xl lg:text-7xl">
           <Highlight image={rectangle2} children="What" /> our customer <br />
@@ -63,21 +61,21 @@ export default function ReviewSection() {
         />
 
         {/* TESTIMONIAL BOX */}
-        <div className="px-10 w-[600px] md:px-10 relative py-6 md:py-8 mt-10 bg-[#D7EEDD4D] rounded-3xl text-left">
+        <div className="px-6 sm:px-10 w-full max-w-xl relative py-6 md:py-8 mt-10 bg-[#D7EEDD4D] rounded-3xl text-left mx-auto">
 
           <div className="flex absolute top-10 left-3 gap-1">
-            <img className="w-16" src={Inverted1} alt="" className="w-6 md:w-8" />
-            <img className="w-20" src={Inverted1} alt="" className="w-6 md:w-8" />
+            <img className="w-6 md:w-8" src={Inverted1} alt="" />
+            <img className="w-6 md:w-8" src={Inverted1} alt="" />
           </div>
 
-          <p className="text-3xl leading-7 text-center md:text-[21px] ml-10 mt-5">
+          <p className="text-base md:text-[21px] leading-7 text-center ml-10 mt-5">
             Elementum delivered the site within the timeline as requested. In the end, the client found a 50%
             increase in traffic within days since its launch. They also had an impressive ability to use technologies
             that the company hasn’t used, which have also proved to be easy to use and reliable.
           </p>
-          <div className="flex absolute top-50 right-10 gap-1">
-            <img className="w-16" src={Inverted2} alt="" className="w-6 md:w-8" />
-            <img className="w-20" src={Inverted2} alt="" className="w-6 md:w-8" />
+          <div className="flex absolute bottom-6 right-6 gap-1">
+            <img className="w-6 md:w-8" src={Inverted2} alt="" />
+            <img className="w-6 md:w-8" src={Inverted2} alt="" />
           </div>
 
         </div>
@@ -85,8 +83,7 @@ export default function ReviewSection() {
       </div>
 
       {/* RIGHT AVATARS */}
-      <div className="flex flex-col mt-30 gap-6 items-center lg:items-start">
-
+      <div className="flex flex-col mt-28 gap-6 t">
         {avatarsRight.map((img, i) => (
           <img
             key={i}
@@ -95,7 +92,6 @@ export default function ReviewSection() {
             alt=""
           />
         ))}
-
       </div>
 
     </section>

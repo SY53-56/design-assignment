@@ -2,48 +2,89 @@ import React from 'react'
 import Box from './Box'
 import photo1 from "../assets/image 348.png"
 import photo2 from "../assets/image 348 (1).png"
-import rectangle2 from "../assets/Rectangle 658.png";
-import Highlight from './Highlight';
-import vector from "../assets/Vector 5.png";
+import rectangle2 from "../assets/Rectangle 658.png"
+import Highlight from './Highlight'
+
+import vector from "../assets/Vector 5.png"
 import polygon from "../assets/Polygon 3.png"
 import polygon1 from "../assets/Polygon 1.png"
 import vector2517 from "../assets/Vector 2517.png"
+
 export default function AboutSection() {
   return (
-    <section className='px-24 relative mt-20 mb-10 flex flex-col gap-12 '>
-<img className='absolute w-[1200px] top-44 right-0' src={vector2517} alt="" />
-  <div className=' relative mb-15'>
-        <Box
-       h1={
-  <h1>
-    Tomorrow should 
-    <br />
-    be better than <Highlight children="today" image={rectangle2}/>
-  </h1>
-}
-        para={<p>We are a team of strategists, designers, communicators, researchers.<br/> Together, we believe that progress only happens when you refuse to play things safe.</p>}
-        img={photo1}
-      />
-<img className='absolute top-20 left-19 w-60' src={vector} alt="" />
-<img className='absolute right-0 w-44 top-6 -z-50' src={polygon} alt="" />
-  </div>
-       <div className=' relative'>
-        <Box
-       h1={
-  <h1>
-<Highlight children="see" image={rectangle2}/> how we can <br/>
- help you progress
-  </h1>
-}
-        para={<p>We are a team of strategists, designers, communicators, researchers.<br/> Together, we believe that progress only happens when you refuse to play things safe.</p>}
-        img={photo1}
-        reversed
-      />
-<img className='absolute top-36 right-60 w-60' src={vector} alt="" />
-<img className='absolute top-1.5 left-9 -z-40 w-36' src={polygon1}alt="" />
-<img className='absolute top-56  left-60 w-36' src={polygon1}alt="" />
+    <section className="relative px-6 md:px-20 lg:px-28 mt-16 md:mt-24 flex flex-col gap-16">
 
-  </div>
+      {/* BACKGROUND SHAPES */}
+      
+
+      <img
+        src={vector2517}
+        alt=""
+        className="absolute right-5 -translate-x-1 translate-y-7 top-48 w-96 md:w-72 lg:w-[700px]"
+      />
+
+      {/* VECTOR DECOR */}
+           {/* BOX 1 */}
+    <div className='relative'>
+        <Box
+        img={photo1}
+        h1={
+          <h1 className="text-xl md:text-3xl lg:text-5xl leading-tight">
+            Tomorrow should  <br />be 
+            
+             better than <Highlight image={rectangle2} children="today" />
+          </h1>
+        }
+        para={
+          <p className="text-sm md:text-base lg:text-lg">
+            We are a team of strategists, designers, communicators, researchers.
+            Together, we believe that progress only happens when you refuse to
+            play things safe.
+          </p>
+        }
+      />
+      <img
+        src={polygon}
+        alt=""
+        className="absolute top-10 right-18 md:right-2 w-20 md:w-32 -z-10"
+      />
+ <img
+        src={vector}
+        alt=""
+        className="absolute top-20 left-24 md:right-10 w-24 md:w-60 opacity-70 -z-10"
+      />
+
+    </div>
+
+      {/* BOX 2 (REVERSED) */}
+     <div className='relative mt-10'>
+       <Box
+        img={photo2}
+        reversed
+        h1={
+          <h1 className="text-3xl md:text-5xl lg:text-6xl leading-tight">
+            Building meaningful <br />
+            digital experiences
+          </h1>
+        }
+        para={
+          <p className="text-sm md:text-base lg:text-lg">
+            We combine creativity and strategy to deliver impactful digital products
+            that help businesses grow and succeed in a competitive world.
+          </p>
+        }
+      />
+      <img
+        src={polygon1}
+        alt=""
+        className="absolute top-4 left-36 md:left-10 w-16 md:w-24 -z-10"
+      />
+        <img
+        src={polygon1}
+        alt=""
+        className="absolute top-60 left-96 md:left-72 w-16 md:w-24 "
+      />
+     </div>
 
     </section>
   )

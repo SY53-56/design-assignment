@@ -25,37 +25,33 @@ const avatars = [
   { src: Ellipse268, className: "translate-y-10 w-24" },
   { src: Ellipse263, className: "w-28" },
   { src: Ellipse262, className: "-translate-y-12 w-32" },
-  { src: Ellipse261, className: "translate-y-12 tranlate-x-1 w-28" },
-  { src: Ellipse260, className: "w-32" },
-  { src: Ellipse259, className: "translate-y-8 w-28" },
-  { src: Ellipse258, className: "-translate-y-4 w-24" },
-];
-
+  { src: Ellipse261, className: "translate-y-12 translate-x-1 w-28" },
+]
   return (
-    <section className="relative overflow-hidden  pt-12 pb-24">
+    <section className="relative  pt-12 pb-24 px-6 md:px-12 lg:px-20">
       {/* Decorative Elements */}
       <img
         src={rectangle3}
         alt=""
-        className="absolute top-16 right-10 w-28"
+        className="absolute top-36 right-20 w-20 sm:w-28"
       />
 
       <img
         src={Vector2510}
         alt=""
-        className="absolute left-0 top-64 h-64"
+        className="hidden md:block absolute left-0 top-64 h-64"
       />
 
       <img
         src={Vector2511}
         alt=""
-        className="absolute left-12 top-64 h-64"
+        className="hidden md:block absolute left-12 top-64 h-64"
       />
 
       {/* Hero Content */}
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
-        <div className="relative">
-          <h1 className="heading text-[60px] md:text-[80px] leading-none">
+        <div className="relative w-full">
+          <h1 className="heading text-[42px] sm:text-[52px] md:text-[70px] lg:text-[80px] leading-none">
             The thinkers and
             <br />
             doers were ch
@@ -73,18 +69,18 @@ const avatars = [
           <img
             src={vector}
             alt=""
-            className="absolute left-1/2 -translate-x-1/2  top-18 w-80"
+            className="absolute left-1/2 -translate-x-1/2 top-18 w-72 sm:w-80"
           />
         </div>
 
-        <p className="para text-[20px] leading-8 mt-10 max-w-3xl">
+        <p className="para text-[18px] md:text-[20px] leading-8 mt-10 max-w-3xl px-2">
           We are a team of strategists, designers, communicators,
           researchers. Together, we believe that progress only
           happens when you refuse to play things safe.
         </p>
 
         {/* Avatars */}
-        <div className="w-full  relative max-w-6xl mt-20 flex justify-between items-end">
+        <div className="w-full relative max-w-6xl mt-20 flex flex-wrap justify-center gap-6 items-end">
           {avatars.map((avatar, index) => (
             <Avatar
               key={index}
