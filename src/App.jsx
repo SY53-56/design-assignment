@@ -7,6 +7,8 @@ import Navbar from './componement/Navbar'
 import Hero from './componement/Hero'
 import Footer from './componement/Footer'
 import AboutSection from './componement/AboutSection'
+import FeaturesSection from './componement/FeaturesSection'
+import ReviewSection from './componement/ReviewSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +19,8 @@ function App() {
 <Navbar/>
 <Hero/>
 <AboutSection/>
+<FeaturesSection/>
+<ReviewSection/>
 <Footer/>
     </section>
     </>
