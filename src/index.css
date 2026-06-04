@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.heading {
+  font-family: "Gerbil", sans-serif;
+}

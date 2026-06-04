@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+
+.heading {
+ font-family: 'New Gerbil', sans-serif;
+}
+.para {
+  font-family: "Satoshi",sans-serif;
+}
