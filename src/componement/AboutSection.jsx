@@ -58,13 +58,14 @@ export default function AboutSection() {
           alt=""
           className="
             absolute
-            top-[20px]
+            top-[390px]
             sm:top-[380px]
             md:top-[190px]
             lg:top-10
-            right-4
+            lg:right-4
             md:right-0
-            lg:top-1
+           sm:right-0.5
+           right-0
             w-12
             sm:w-16
             md:w-24
@@ -103,8 +104,8 @@ export default function AboutSection() {
   sm:top-[320px]
   md:top-[10px]
   lg:top-4
-  left-4
-  sm:left-10
+  left-8
+  sm:left-18
   md:left-6
   lg:left-10
   w-10
@@ -120,7 +121,7 @@ export default function AboutSection() {
           alt=""
          className="
   absolute
-  top-[320px]
+  top-[430px]
   sm:top-[380px]
   md:top-[270px]
 

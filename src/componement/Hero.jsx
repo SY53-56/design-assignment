@@ -4,7 +4,7 @@ import rectangle2 from "../assets/Rectangle 658.png";
 
 import Vector2510 from "../assets/Vector 2510.png";
 import Vector2511 from "../assets/Vector 2511.png";
-
+import rectangle3 from "../assets/Ellipse 739.png"
 import Ellipse257 from "../assets/Ellipse 257.png";
 import Ellipse258 from "../assets/Ellipse 258.png";
 import Ellipse259 from "../assets/Ellipse 259.png";
@@ -74,11 +74,29 @@ export default function Hero() {
         alt=""
         className="hidden lg:block absolute left-10 top-52 h-48 xl:h-64"
       />
-
+  <img
+            src={rectangle3}
+            alt=""
+            className="
+              absolute 
+              sm:right-0
+              lg:right-10
+             md:right-0
+              top-36
+              right-0.5
+              sm:top-28
+              md:top-44
+              lg:top-36
+              w-15
+              sm:w-20
+              md:w-28
+              lg:w-32
+            "
+          />
       {/* Hero Content */}
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
         <div className="relative w-full">
-          <h1 className="heading mx-auto max-w-6xl text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[90px] leading-[1.05]">
+          <h1 className="heading mx-auto max-w-6xl text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[90px] md:leading-20 lg:leading-[1.05]">
             The thinkers and
             <br />
             doers were ch
@@ -95,7 +113,7 @@ export default function Hero() {
 
           <img
             src={vector}
-            alt=""
+            alt="vector"
             className="
               absolute
               left-1/2
@@ -109,6 +127,7 @@ export default function Hero() {
               md:w-72
             "
           />
+         
         </div>
 
         <p className="para text-base sm:text-lg md:text-xl leading-7 md:leading-8 mt-6 md:mt-10 max-w-3xl px-2">
